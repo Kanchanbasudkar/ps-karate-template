@@ -5,3 +5,12 @@ Feature: Get all products
     Given path 'product'
     When method Get
     Then status 200
+
+
+  Scenario: User need to get all products info by catergory Id
+    * def query = {category:'1'}
+    Given path 'product'
+    And params query
+    When method Get
+    Then status 200
+
