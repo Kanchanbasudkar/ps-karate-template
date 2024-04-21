@@ -14,3 +14,5 @@ Feature: Get all products
     When method Get
     Then status 200
 
+
+
